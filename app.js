@@ -17,8 +17,8 @@ var connector = new builder.ChatConnector
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
-//var model = process.env.LUIS_MODEL || 'Missing Model URL';
-var model = process.env.LUIS_MODEL || 'https://api.projectoxford.ai/luis/v1/application?id=0b0fab0c-205d-4e9e-ad4b-0b3c2b45da1a&subscription-key=f4b4ef3df9c649a3937a7f7b1b6147f1&q=';
+var model = process.env.LUIS_MODEL || 'Missing Model URL';
+
 var recognizer = new builder.LuisRecognizer(model);
 var dialog = new builder.IntentDialog({ recognizers: [recognizer] });
 bot.dialog('/', dialog);
