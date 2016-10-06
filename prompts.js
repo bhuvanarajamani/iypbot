@@ -1,5 +1,5 @@
 module.exports = {
-    helpMessage: "CrunchBot can answer questions about a handfull of tech companies. Here are some of the things you can ask:\n\n" +
+    helpMessage: "IYPBot can answer questions about a handfull of companies. Here are some of the things you can ask:\n\n" +
     "* 'tell me about Microsoft'\n" +
     "* 'how many companies has apple bought?'\n" +
     "* 'when did amazon go public?'\n" +
